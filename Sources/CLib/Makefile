@@ -20,12 +20,9 @@ $(LIB): $(SRC) $(LIBFILES) $(DIR)
 $(DIR):
 	mkdir $@
 
-run: $(EXE)
-	$(EXE) data/test.zip
-
 clean:
 	@if [ -d $(DIR) ]; then echo rm -r $(DIR); fi
 	@if [ -d $(DIR) ]; then rm -r $(DIR) 2>/dev/null || true; fi
 
 
-.PHONY := clean run
+.PHONY := clean
