@@ -1,4 +1,4 @@
-.DEFAULT_GOAL := $(EXE)
+.DEFAULT_GOAL := $(LIB)
 
 INCLUDES := include/
 LIBPATHS :=
